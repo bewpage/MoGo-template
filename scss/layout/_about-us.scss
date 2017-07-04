@@ -1,0 +1,42 @@
+
+.section__about-us{
+    height: 750px;
+}
+
+
+.section__about-us__title{
+    text-align: center;
+    p:first-child{
+        font-size: 24px;
+        font-family: 'Kaushan Script', cursive;
+        margin-top: 94px;
+    }
+    p:nth-child(2){
+        font-size: 30px;
+        font-family: $menu-font;
+        margin-top: 23px;
+        margin-bottom: 41px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    hr{
+        width: 60px;
+        background: #f38181;
+        border: 2px solid #f38181;
+        margin: 0 auto;
+        margin-bottom: 47px;
+    }
+}
+
+.section__about-us__maintext{
+    font-family: $menu-font;
+    margin-bottom: 104px;
+    padding: 0 15%;
+}
+
+.section__about-us__articles{
+    div{
+        border: 1px solid red;
+        height: 250px;
+    }
+}

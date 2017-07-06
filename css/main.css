@@ -29,40 +29,40 @@
       margin-bottom: 2%; }
       .container .row [class*="col-"]:last-child {
         margin-right: 0%; }
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 40.5em) {
       .container .row .col-1 {
         width: 6.5%; } }
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 40.5em) {
       .container .row .col-2 {
         width: 15%; } }
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 40.5em) {
       .container .row .col-3 {
         width: 23.5%; } }
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 40.5em) {
       .container .row .col-4 {
         width: 32%; } }
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 40.5em) {
       .container .row .col-5 {
         width: 40.5%; } }
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 40.5em) {
       .container .row .col-6 {
         width: 49%; } }
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 40.5em) {
       .container .row .col-7 {
         width: 57.5%; } }
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 40.5em) {
       .container .row .col-8 {
         width: 66%; } }
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 40.5em) {
       .container .row .col-9 {
         width: 74.5%; } }
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 40.5em) {
       .container .row .col-10 {
         width: 83%; } }
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 40.5em) {
       .container .row .col-11 {
         width: 91.5%; } }
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 40.5em) {
       .container .row .col-12 {
         width: 100%; } }
 
@@ -199,19 +199,20 @@ div.header__jumbotron__articles {
   div.header__jumbotron__articles hr {
     width: 100%; } }
 .section__about-us {
-  height: 750px; }
+  height: auto;
+  display: inline-block; }
 
 .section__about-us__title {
   text-align: center; }
   .section__about-us__title p:first-child {
     font-size: 24px;
     font-family: "Kaushan Script", cursive;
-    margin-top: 94px; }
+    margin-top: 85px; }
   .section__about-us__title p:nth-child(2) {
     font-size: 30px;
     font-family: "Montserrat", sans-serif;
-    margin-top: 23px;
-    margin-bottom: 41px;
+    margin-top: 20px;
+    margin-bottom: 35px;
     font-weight: 700;
     text-transform: uppercase; }
   .section__about-us__title hr {
@@ -219,15 +220,14 @@ div.header__jumbotron__articles {
     height: 3px;
     background: #f38181;
     margin: 0 auto;
-    margin-bottom: 47px; }
+    margin-bottom: 40px; }
 
 .section__about-us__maintext {
   font-family: "Montserrat", sans-serif;
   margin-bottom: 104px;
   padding: 0 15%; }
 
-.section__about-us__articles div {
-  border: 1px solid red;
+.section__about-us__articles {
   height: 250px; }
 
 #myBar {
@@ -243,27 +243,96 @@ div.header__jumbotron__articles {
 .section__about-us__img-container {
   background-size: cover;
   background-position: center;
-  overflow: hidden;
-  position: relative; }
-
-img[class] {
-  width: 100%;
-  background-size: cover;
-  background-position: center; }
-
-a .section__about-us__after {
-  font-family: "Montserrat", sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: white;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%; }
-  a .section__about-us__after p {
+  position: relative;
+  margin-bottom: 15px; }
+  .section__about-us__img-container:before {
+    content: "";
     position: absolute;
-    top: 53%;
-    left: calc(50% - 47px); }
+    width: 100%;
+    height: 100%;
+    bottom: 10px;
+    left: -10px;
+    z-index: 999;
+    visibility: hidden;
+    background: #e68280;
+    /* Old Browsers */
+    background: -moz-linear-gradient(top, #e68280 0%, rgba(234, 210, 131, 0.8) 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #e68280), color-stop(100%, rgba(234, 210, 131, 0.8)));
+    /* Chrome, Safari4+ */
+    background: -webkit-linear-gradient(top, #e68280 0%, rgba(234, 210, 131, 0.8) 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #e68280 0%, rgba(234, 210, 131, 0.8) 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #e68280 0%, rgba(234, 210, 131, 0.8) 100%);
+    /* IE 10+ */
+    background: linear-gradient(to bottom, #e68280 0%, rgba(234, 210, 131, 0.8) 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e68280', endColorstr='#ead283', GradientType=0 );
+    /* IE6-9 */
+    -webkit-box-shadow: 10px 10px 0px 0px #95e1d3;
+    -moz-box-shadow: 10px 10px 0px 0px #95e1d3;
+    box-shadow: 10px 10px 0px 0px #95e1d3; }
+  .section__about-us__img-container:hover:before {
+    visibility: visible; }
+  .section__about-us__img-container img[class] {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative; }
+  .section__about-us__img-container a {
+    text-decoration: none;
+    color: #ffffff; }
+    .section__about-us__img-container a p {
+      font-size: 18px;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 700;
+      text-transform: uppercase;
+      visibility: hidden;
+      position: absolute;
+      top: 50%;
+      left: calc(50% - 70px);
+      z-index: 1000; }
+
+@media only screen and (min-width: 1150px) {
+  .section__about-us {
+    height: 750px;
+    display: block; } }
+.facts {
+  height: auto;
+  background: #95e1d3; }
+
+.facts__mainBox {
+  height: 170px;
+  display: block;
+  border-bottom: 2px solid #ffffff; }
+  .facts__mainBox h3, .facts__mainBox p {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff; }
+  .facts__mainBox h3 {
+    padding-top: 20px;
+    font-size: 72px;
+    font-weight: 700; }
+  .facts__mainBox p {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 400; }
+
+@media only screen and (min-width: 40.5em) {
+  .facts {
+    height: 270px; }
+
+  .facts__mainBox {
+    height: 270px;
+    width: calc(100%/5);
+    padding-top: 50px;
+    float: left;
+    border-bottom: none;
+    border-right: 1px solid #ffffff; }
+    .facts__mainBox:first-child {
+      border-left: 1px solid #ffffff; } }
+.service {
+  height: 650px; }
 
 /*# sourceMappingURL=main.css.map */

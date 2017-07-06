@@ -1,0 +1,65 @@
+.facts{
+    height: auto;
+    background: #95e1d3;
+}
+
+.facts__mainBox{
+    height: 170px;
+    display: block;
+    border-bottom: 2px solid #ffffff;
+
+    h3, p{
+        text-align: center;
+        font-family: $font-montserrat;
+        color: #ffffff;
+    }
+    h3{
+        padding-top: 20px;
+        font-size: 72px;
+        font-weight: 700;
+    }
+    p {
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+}
+
+
+
+
+
+@media only screen and (min-width: $mobile-size) {
+    //here everything bigger than mobile size
+    body{
+        //background: #A5A000;
+    }
+
+}
+
+
+@media only screen and (min-width: $tablets-size) {
+    //here everything bigger than mobile size
+    .facts{
+        height: 270px;
+    }
+
+    .facts__mainBox{
+        height: 270px;
+        width: calc(100%/5);
+        padding-top: 50px;
+        float: left;
+        border-bottom: none;
+        border-right: 1px solid #ffffff;
+        &:first-child{
+            border-left: 1px solid #ffffff;
+        }
+    }
+
+}
+
+
+@media only screen and (min-width: $pc-size) {
+    //here everything bigger than mobile size
+
+}

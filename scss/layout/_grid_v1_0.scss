@@ -36,7 +36,8 @@ $tablet-up: "only screen and (min-width: 768px)";
       width: 100%; //domyslnie col maja 100% szerokossci
       padding: 0 $gutter;
       margin-right: $grid-spacing;
-      &:last-child {
+        margin-bottom: $grid-spacing;
+        &:last-child {
         margin-right:0%;
       }
 

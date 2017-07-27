@@ -3,29 +3,6 @@
     display: inline-block;
 }
 
-.section__about-us__title{
-    text-align: center;
-    p:first-child{
-        font-size: 24px;
-        font-family: $font-kaushan;
-        margin-top: 85px;
-    }
-    p:nth-child(2){
-        font-size: 30px;
-        font-family: $font-montserrat;
-        margin-top: 20px;
-        margin-bottom: 35px;
-        font-weight: 700;
-        text-transform: uppercase;
-    }
-    hr{
-        width: 60px;
-        height: 3px;
-        background: #f38181;
-        margin: 0 auto;
-        margin-bottom: 40px;
-    }
-}
 
 .section__about-us__maintext{
     font-family: $font-montserrat;

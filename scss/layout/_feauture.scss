@@ -1,0 +1,31 @@
+.feauture{
+    height: 862px;
+    background-image: url('../img/45.png');
+    width: 100%;
+    margin: 0;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    display: inline-block;
+}
+
+.feauture__img img{
+    display: block;
+    margin: auto;
+}
+
+
+@media only screen and (min-width: $pc-size) {
+    //here everything bigger than mobile size
+    .feauture{
+        display: block;
+    }
+    //.feauture__img img{
+    //    display: block;
+    //    margin: auto;
+    //}
+}
+
+
+
+

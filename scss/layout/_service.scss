@@ -1,3 +1,45 @@
 .service{
     height: 650px;
 }
+
+.service__article__main-box {
+    display: flex;
+    div:first-child{
+
+    }
+}
+
+.service__article__icon{
+    width: 90px;
+    img{
+        display: block;
+        margin: auto;
+        width: 50%;
+    }
+}
+
+.service__article__text{
+    //float: right;
+    p:first-child{
+        margin-top: -4px;
+        color: $font-service_title-color;
+        font-family: $font-montserrat;
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+    p:nth-child(2){
+        padding-top: 20px;
+        margin-bottom: 20px;
+        font-family: $font-roboto;
+        font-size: 14px;
+        color: $font-service_text-color;
+    }
+}
+
+.service__article__line{
+    //width: 60px;
+    height: 3px;
+    background: #e5e5e5;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}

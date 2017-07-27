@@ -4,6 +4,9 @@
 .float__right {
   float: right; }
 
+.borderbox {
+  border: 1px solid red; }
+
 * {
   box-sizing: border-box; }
 
@@ -62,6 +65,26 @@
     @media only screen and (min-width: 40.5em) {
       .container .row .col-12 {
         width: 100%; } }
+
+.section__main-title {
+  text-align: center; }
+  .section__main-title p:first-child {
+    font-size: 24px;
+    font-family: "Kaushan Script", cursive;
+    margin-top: 85px; }
+  .section__main-title p:nth-child(2) {
+    font-size: 30px;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 20px;
+    margin-bottom: 35px;
+    font-weight: 700;
+    text-transform: uppercase; }
+  .section__main-title hr {
+    width: 60px;
+    height: 3px;
+    background: #f38181;
+    margin: 0 auto;
+    margin-bottom: 40px; }
 
 #section__header {
   background-image: url("../img/35.png");
@@ -200,26 +223,6 @@ div.header__jumbotron__articles {
   height: auto;
   display: inline-block; }
 
-.section__about-us__title {
-  text-align: center; }
-  .section__about-us__title p:first-child {
-    font-size: 24px;
-    font-family: "Kaushan Script", cursive;
-    margin-top: 85px; }
-  .section__about-us__title p:nth-child(2) {
-    font-size: 30px;
-    font-family: "Montserrat", sans-serif;
-    margin-top: 20px;
-    margin-bottom: 35px;
-    font-weight: 700;
-    text-transform: uppercase; }
-  .section__about-us__title hr {
-    width: 60px;
-    height: 3px;
-    background: #f38181;
-    margin: 0 auto;
-    margin-bottom: 40px; }
-
 .section__about-us__maintext {
   font-family: "Montserrat", sans-serif;
   margin-bottom: 104px;
@@ -332,5 +335,52 @@ div.header__jumbotron__articles {
       border-left: 1px solid #ffffff; } }
 .service {
   height: 650px; }
+
+.service__article__main-box {
+  display: flex; }
+
+.service__article__icon {
+  width: 90px; }
+  .service__article__icon img {
+    display: block;
+    margin: auto;
+    width: 50%; }
+
+.service__article__text p:first-child {
+  margin-top: -4px;
+  color: #333333;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase; }
+.service__article__text p:nth-child(2) {
+  padding-top: 20px;
+  margin-bottom: 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #999999; }
+
+.service__article__line {
+  height: 3px;
+  background: #e5e5e5;
+  margin-top: 50px;
+  margin-bottom: 40px; }
+
+.feauture {
+  height: 862px;
+  background-image: url("../img/45.png");
+  width: 100%;
+  margin: 0;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  display: inline-block; }
+
+.feauture__img img {
+  display: block;
+  margin: auto; }
+
+@media only screen and (min-width: 1150px) {
+  .feauture {
+    display: block; } }
 
 /*# sourceMappingURL=main.css.map */

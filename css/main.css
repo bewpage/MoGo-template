@@ -4,9 +4,6 @@
 .float__right {
   float: right; }
 
-.borderbox {
-  border: 1px solid red; }
-
 * {
   box-sizing: border-box; }
 

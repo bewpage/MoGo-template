@@ -1,12 +1,8 @@
 const path = require('path');
-const glob = require('glob');
 
 module.exports = {
     mode: 'development',
-    entry: {
-        filename: glob.sync('js/content'),
-        path: path.resolve(__dirname, 'js')
-    },
+    entry: [ './js/content/main.js', './js/content/plugins.js' ],
     devtool: 'inline-source-map',
     devServer: {
         inline: true,
@@ -14,8 +10,9 @@ module.exports = {
         port: 3001
     },
     output: {
-        filename: "./build/out.js",
-        path: path.resolve(__dirname, 'js')
+        path: path.resolve(__dirname, 'build'),
+        filename: '[name].js'
+
     },
     watch: true,
     module: {
